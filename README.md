@@ -68,3 +68,22 @@ Step 8: Installing python packages
         - creating requirement.txt 
         Move to vagrant location: cd /vagrant
         Install all the requirements: pip install -r requirments.txt 
+
+Step 9: Creating a django project
+        Command: django-admin.py startproject profiles_project .
+        Variables:
+            profiles_project: Name of the project
+            . : Location where to create the project
+
+Step 10: Creating a django app -> A project can contain multiple apps. We can segregate them according to the functionality
+        Command: python manage.py startapp profiles_api
+        Variables:
+            manage.py: File that is created along with the project
+            profiles_api: Name of the app.
+
+Step 11: Enable app and rest framework in project
+        Open settings.py in project
+        add rest_framework (framework), rest_framework.authtoken(authentication func), profiles_api(app) in installed_apps
+
+Step 12: Testing changes with django dev server
+        Running server: python manage.py runserver 0.0.0.0:8000
