@@ -64,3 +64,7 @@ Step 7: Activate the virtual env
         Command: source ~/env/bin/activate
         For exiting from this venv: deactivate
 
+Step 8: Installing python packages
+        - creating requirement.txt 
+        Move to vagrant location: cd /vagrant
+        Install all the requirements: pip install -r requirments.txt 
