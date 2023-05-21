@@ -87,3 +87,15 @@ Step 11: Enable app and rest framework in project
 
 Step 12: Testing changes with django dev server
         Running server: python manage.py runserver 0.0.0.0:8000
+
+
+# Development Process taken
+
+Step 1: Creation of Models in models.py
+        -> Overiding a user model for profiles
+        -> Create migrations after completion of Models and Model manager using:
+            python manage.py makemigrations profile_api
+                Variables: profile_api -> app name
+        -> execute the migration
+            python manage.py migrate
+        
