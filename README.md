@@ -102,4 +102,10 @@ Step 1: Creation of Models in models.py
 Step 2: Activate Django Admin
         -> Create super user for db
         -> Register models in admin.py file of the app
+
+
+Step 3: API Views
+        -> APIView -> Full control over the logic
+            Open views.py in app
+        -> ViewSet
         
