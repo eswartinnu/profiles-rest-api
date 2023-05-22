@@ -98,4 +98,8 @@ Step 1: Creation of Models in models.py
                 Variables: profile_api -> app name
         -> execute the migration
             python manage.py migrate
+
+Step 2: Activate Django Admin
+        -> Create super user for db
+        -> Register models in admin.py file of the app
         
